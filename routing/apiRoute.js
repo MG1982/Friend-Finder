@@ -8,14 +8,14 @@ module.exports = (app) => {
         res.json(friendData);
     });
 
-    // A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+    // A POST route /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
     app.post("/api/friends", (req, res) => {
         // find a friend and return results
         findFriend(req.body, friendData, res)
     });
 };
 
-function findFriend(newFriend, friendList, res) {
+let findFriend = (newFriend, friendList, res) => {
     // new friend is the the one that entered on the form
 
     // loop through each name on current list
@@ -36,8 +36,7 @@ function findFriend(newFriend, friendList, res) {
             totalscore += Math.abs(newFriendScoreList[j] - potentialScorelist[j])
         }
 
-        // if this is better than correct score
-        // then replace
+        // if this is better than correct score replace it
         if (totalscore < minscore) {
             bestMatchFriend = friendList[i]
             bestMatchFriend['result'] = true

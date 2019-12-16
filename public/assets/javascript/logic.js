@@ -4,7 +4,7 @@ $(".submit").on("click", (event) => {
     questionsComplete = true
     let scoreResults = []
 
-    // Validate loop all 10 questions and push all results
+    // Validate/Loop through all 10 questions and push results
     for (let i = 1; i < 11; i++) {
         idName = "#q" + i
         answer = $(idName).val().trim()
@@ -16,7 +16,7 @@ $(".submit").on("click", (event) => {
         }
     }
     console.log(scoreResults)
-    // Validate name and picture form data
+    // Validate name and picture in form data
     if (($("#name").val().trim()) == "" || ($("#urlPhoto").val().trim() == "")) {
         questionsComplete = false;
     }
@@ -33,7 +33,7 @@ $(".submit").on("click", (event) => {
         //AJAX Post
         $.post("/api/friends", info,
             (data) => {
-                // analyze resulting data
+                // check result data
                 console.log("-------> ", data)
                 if (data['result'] == true) {
                     console.log(data['name'], data['photo'])
@@ -48,11 +48,9 @@ $(".submit").on("click", (event) => {
                         idName = "#q" + i
                         $(idName).val("")
                     }
-                    // SHOW RESULT MODAL
+                    // Shw result modal
                     $('#friendResult').modal('show');
                 } else {
-                    // this will only happen if the list is blank
-                    // which won't ever happen
                     alert("Sorry, no matches!");
                 }
             });
