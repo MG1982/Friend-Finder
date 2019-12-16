@@ -1,10 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Survey</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- External Normalize -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- External Sytle Sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- jQuery JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+
+    <title>Friend Finder - Survey</title>
+
   </head>
-  <body></body>
+  <body>
+    <div class="bgimage">
+      <div class="poster">     
+        <h1 class="display-4 text-center title">FRIEND FINDER</h1>
+        <p class="lead text-center">
+          You're only 10 questions away from finding a new friend!
+        </p>
+          
+    <div class="container survey">
+    <div class="jumbotron text-center">
+      <h4 class="text-center">Answer all 10 survey questions honestly and try not to leave any neutral
+        answers.</h4>
+        <hr class="my-4" />
+        <form role="form">
+          <div class="form-group">
+            <h5>Name (Required)</h5>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <h5>Link to Photo Image (Required)</h5>
+            <input type="text" class="form-control" id="urlPhoto">
+          </div>
+
+    <hr class="my-4" />
+
+<!-- ====== START OF SURVEY QUESTIONS ====== -->
+    <div class="form-group">
+      <h5><strong>Question 1</strong></h5>
+      <p>You enjoy vibrant social events with lots of people.</p>
+      <select class="chosen-select" id="q1">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 2</strong></h5>
+          <p>Your travel plans are more likely to look like a rough list of ideas than a detailed itinerary.</p>
+          <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 3</strong></h5>
+          <p>You usually prefer to get your revenge rather than forgive.</p>
+          <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 4</strong></h5>
+          <p>When starting to work on a project, you prefer to make as many decisions upfront as possible.</p>
+          <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 5</strong></h5>
+          <p>You tend to focus on present realities rather than future possibilities.</p>
+          <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 6</strong></h5>
+          <p>When it comes to making life-changing choices, you mostly listen to your heart rather than your head.</p>
+          <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 7</strong></h5>
+          <p>Generally speaking, you rely more on your experience than your imagination.</p>
+          <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 8</strong></h5>
+          <p>You cannot imagine yourself dedicating your life to the study of something that you cannot see, touch, or experience.</p>
+          <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 9</strong></h5>
+          <p>You rarely think back on the choices you made and wonder what you could have done differently.</p>
+          <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="form-group">
+          <h5><strong>Question 10</strong></h5>
+          <p>When you know someone thinks highly of you, you also wonder how long it will be until they become disappointed in you.</p>
+          <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <!-- ====== END OF SURVEY QUESTIONS ====== -->
+        
+        <hr class="my-4" />
+       
+        <div class= "sumbmit-button text-center">  
+        <a type="submit" class="btn bg-dark text-white btn-lg submit" 
+          >Submit</a
+        ></div>
+      </div>
+    </div>
+
+<!-- START OF MODAL -->
+    <div class="modal" id="friendResult">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Best Match</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p id="friendName"></p>
+            <img class="img-fluid" id="friendPhoto" src="">
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+<!-- END OF MODAL -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/MG1982/Friend-Finder">GitHub Repo</a> | Photo by <a href="https://unsplash.com/@hollowaykryan?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge">Ryan Holloway</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+  </footer>
+
+    <!-- External JS -->
+    <script src="./assets/javascript/logic.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+  
 </html>
