@@ -12,8 +12,7 @@
 > 2. Open cloned repo folder in your text editor.
 > 3. Open the terminal, type (npm install) without the brackets and press Enter.
 > 4. type (node server) without the brackets in terminal and press enter.
->
-> ### Once the npm install is complete and your PORT listener is activated open your browser and enter (localhost:3000/) without the brackets.
+> 5. Once the npm install is complete and your PORT listener is activated open your browser and enter (localhost:3000/) without the brackets.
 
 **Built With ;**
 
