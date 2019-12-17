@@ -6,9 +6,8 @@ const bodyParser = require("body-parser");
 // Set port number
 let PORT = process.env.PORT || 3000;
 
-// Parser setup
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
 // I had major issues trying to get external css and js files to link until I worked out this one!
 app.use(express.static('public'))
