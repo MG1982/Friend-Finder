@@ -20,4 +20,4 @@
 - Script languages - HTML, CSS + JavaScript
 - Framework - Bootstrap
 - Runtime environment - Node.js
-- Packages - express, path + body-parser
+- Packages - Express.
