@@ -2,7 +2,7 @@
 
 ## Take the 10 question survey and be matched with someone of similar personality.
 
-### Hosted on Heroku: <a href="https://quiet-journey-38543.herokuapp.com/">Friend Finder</a>
+### Hosted on Heroku: <a href="https://friendz-finder.herokuapp.com/">Friend Finder</a>
 
 ![Friend Finder.jpg](./public/assets/images/friendFinder.jpg "Friend Finder")
 
